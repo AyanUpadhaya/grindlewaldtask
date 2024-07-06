@@ -75,8 +75,8 @@ html {
   color: var(--light-yellow);
 }
 
-.px-4{
-    padding-inline: 16px;
+.px-4 {
+  padding-inline: 16px;
 }
 
 .header {
@@ -240,8 +240,8 @@ html {
   font-weight: 400;
 }
 /* about us starts */
-.about-us-section{
-     max-width: 100%;
+.about-us-section {
+  max-width: 100%;
   background: url("../images/background.png") no-repeat;
   background-size: cover;
 }
@@ -293,16 +293,78 @@ html {
 /* about us ends */
 
 /* our unique section starts */
-.our-unique-section{
-    padding-top: 173px;
-    padding-bottom: 184px;
-    background-color: var(--showcse-bg);
+.our-unique-section {
+  padding-top: 173px;
+  padding-bottom: 184px;
+  background-color: var(--showcse-bg);
 }
-.our-unique-section_title h2{
-    width: 100%;
-    text-transform: capitalize;
-    margin-left: 109px;
+.our-unique-section_title h2 {
+  width: 100%;
+  text-transform: capitalize;
+  margin-left: 109px;
 }
+.large-images-area {
+  padding-top: 148px;
+}
+.large-images-area_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.images_area-item img {
+  max-width: 100%;
+  position: inherit;
+  z-index: 0;
+}
+
+.images_area-item {
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  left: 39px;
+  bottom: 58px;
+  color: #f9f9f9;
+  font-family: var(--font-boska);
+  font-size: 32px;
+  font-weight: 400;
+  z-index: 500;
+}
+.img-two .img-text{
+    bottom: 60px;
+    left: 51px;
+}
+
+.cozzy-cabin-container{
+
+    width:445px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cozzy-cabin-container .left-col{
+    max-width: 381px;
+}
+.cozzy-cabin-container .right-col{
+    max-width: 100px;
+}
+.cozzy-cabin-container_title{
+    font-family: var(--font-boska);
+    font-weight: 500;
+    font-size: 68px;
+    color: #f9f9f9;
+}
+.cozzy-cabin-container_subtitle{
+    font-family: "Switzer-Regular";
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
 /* sign up section */
 .signup-section {
   padding-top: 103px;
@@ -420,7 +482,6 @@ html {
 .showcase-carousel-area {
   margin-top: 172px;
 }
-
 
 .showcase-item {
   max-width: 466px;
@@ -619,30 +680,33 @@ html {
   font-size: 18px;
 }
 
-
 .swiper {
   width: 100%;
   height: 476px;
 }
 
-.swiper-button-containers{
-    position: relative;
-    bottom: 0px;
-    z-index: 300;
-    padding-top: 200px;
+.swiper-button-containers {
+  position: relative;
+  bottom: 0px;
+  z-index: 300;
+  padding-top: 200px;
 }
 
-.swiper-button-prev,.swiper-button-next{
-    z-index: 400 !important;
-    padding: 0 !important;
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 400 !important;
+  padding: 0 !important;
 }
 
-.swiper-button-prev{
-    left: calc(50% - 60px) !important;
-    
+.swiper-button-prev {
+  left: calc(50% - 60px) !important;
 }
-.swiper-button-prev::after{content:none !important;}
-.swiper-button-next{
-    right: calc(50% - 40px) !important;
+.swiper-button-prev::after {
+  content: none !important;
 }
-.swiper-button-next::after{content:none !important;}
+.swiper-button-next {
+  right: calc(50% - 40px) !important;
+}
+.swiper-button-next::after {
+  content: none !important;
+}
