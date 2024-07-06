@@ -70,8 +70,8 @@ html {
 .text-stroke {
   color: var(--stroke-clr);
 }
-.text-green{
-    color: var(--light-yellow);
+.text-green {
+  color: var(--light-yellow);
 }
 
 .header {
@@ -87,6 +87,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 .navbar {
   width: 100%;
@@ -187,7 +188,7 @@ html {
   padding-bottom: 125px;
 }
 
-.main .section-img  {
+.main .section-img {
   max-width: 100%;
   background: url("../images/background.png") no-repeat;
   background-size: cover;
@@ -238,7 +239,6 @@ html {
   position: relative;
   background: url("../images/background.png") no-repeat;
   background-size: cover;
-  margin-top: -10px;
 }
 .about-us img {
   max-width: 100%;
@@ -274,14 +274,13 @@ html {
   color: #fff;
   text-transform: capitalize;
 }
-.intersect-img{
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
+.intersect-img {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
 }
 /* about us ends */
-
 
 /* sign up section */
 .signup-section {
@@ -290,131 +289,240 @@ html {
   background: url("../images/background.png") no-repeat;
   background-size: cover;
 }
-.signup-section_area{
-    max-width: 1194px;
-    margin: auto;
-    position: relative;
+.signup-section_area {
+  max-width: 1194px;
+  margin: auto;
+  position: relative;
 }
-.signup-section_area img{
-    max-width: 100%;
+.signup-section_area img {
+  max-width: 100%;
 }
-.signup-section_area .form-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.signup-section_area .form-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.signup-section_area .form-section .form-content-area{
-    max-width: 603px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.signup-section_area .form-section .form-content-area {
+  max-width: 603px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.form-content-area_title{
-    font-family: var(--font-boska);
-    font-weight: 400;
-    color: #fff;
-    font-size: 68px;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 21px;
+.form-content-area_title {
+  font-family: var(--font-boska);
+  font-weight: 400;
+  color: #fff;
+  font-size: 68px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 21px;
 }
-.form-content-area_description{
-    font-family: "Switzer-Regular";
-    font-weight: 300;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 60px;
+.form-content-area_description {
+  font-family: "Switzer-Regular";
+  font-weight: 300;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
 }
-.form-group{
-    height: 60px;
-    background-color: #fff;
-    width: 100%;
-    display: flex;
+.form-group {
+  height: 60px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
 }
-.form-group input{
-    flex: 1;
-    border: 0;
-    outline: 0;
-    padding-left: 21px;
-    /* placeholder BBBBBB */
-    font-family: "Switzer-Regular";
-    font-size: 18px;
+.form-group input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding-left: 21px;
+  /* placeholder BBBBBB */
+  font-family: "Switzer-Regular";
+  font-size: 18px;
 }
 
 ::placeholder {
-  color: #BBBBBB
+  color: #bbbbbb;
 }
 
-.form-btn{
-    width: 174px;
-    background-color: var(--light-yellow);
-    font-family: "Switzer-Semibold";
-    font-weight: 500;
-    color: #1B3936;
-    text-transform: capitalize;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
+.form-btn {
+  width: 174px;
+  background-color: var(--light-yellow);
+  font-family: "Switzer-Semibold";
+  font-weight: 500;
+  color: #1b3936;
+  text-transform: capitalize;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 /* reserve section  */
-.reserve-section-area{
-    background-color: #fff;
-    max-width: 100%;
-    position: relative;
-    padding-top: 95px;
-    padding-bottom: 105px;
-    
+.reserve-section-area {
+  background-color: #fff;
+  max-width: 100%;
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 105px;
 }
 
-.reserve-section-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:151px;
-    align-items: center;
+.reserve-section-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 151px;
+  align-items: center;
 }
-.reserve-container{
-    max-width: 1040px;
-    margin: 0 auto;
+.reserve-container {
+  max-width: 1040px;
+  margin: 0 auto;
 }
-.reserve-section-left-col .reserve-section-title{
-    font-family: var(--font-boska);
-    font-weight: 400;
-    font-size: 68px;
-    text-transform: capitalize;
-    margin-bottom: 14px;
+.reserve-section-left-col .reserve-section-title {
+  font-family: var(--font-boska);
+  font-weight: 400;
+  font-size: 68px;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  color: var(--black-500);
 }
-.reserve-section-left-col .reserve-section-para{
-    font-family: "Switzer-Regular";
-    font-weight: 400;
-    margin-bottom: 72px;
-    font-size: 18px;
+.reserve-section-left-col .reserve-section-para {
+  font-family: "Switzer-Regular";
+  font-weight: 400;
+  margin-bottom: 72px;
+  font-size: 18px;
+  color: var(--black-500);
+}
+.reserve-section-right-col img {
+  max-width: 203px;
+  height: auto;
+  padding-top: 20px;
+}
+.action-btn {
+  width: 200px;
+  height: 72px;
+  text-align: center;
+  border: 1px solid var(--black-500);
+  font-family: "Switzer-Regular";
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black-500);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
+/* contact section */
+.contact-section-area {
+  position: relative;
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
 }
-.reserve-section-right-col img{
-    max-width: 203px;
-    height: auto;
-    padding-top: 20px;
+.contact-flex-box {
+  display: flex;
+  flex-direction: row;
 }
-.action-btn{
-    width: 200px;
-    height: 72px;
-    text-align: center;
-    border: 1px solid var(--black-500);
-    font-family: "Switzer-Regular";
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--black-500);
-    border-radius: 50%;
+.contact-flex_about,
+.contact-flex_rooms,
+.contact-flex_contact {
+  flex: 1;
+  padding: 30px 36px;
+  height: 320px;
+  position: relative;
+}
+
+.contact-flex_about {
+  background-color: var(--light-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-flex_rooms,
+.contact-flex_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 127px;
+}
+
+.contact-flex_about_title,
+.contact-flex_rooms_title,
+.contact-flex_contact_title {
+  font-family: var(--font-boska);
+  font-weight: 400;
+  font-size: 68px;
+}
+.contact-flex_about_title {
+  color: var(--black-500);
+}
+.contact-flex_rooms_title {
+  color: #ffffff;
+  margin-top: 20px;
+}
+.contact-flex_contact_title {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.contact-flex_about_para,
+.contact-flex_rooms_para,
+.contact-flex_contact_para {
+  font-family: "Switzer-Regular";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.contact-flex_about_para {
+  color: var(--black-500);
+}
+.contact-flex_rooms_para {
+  color: #ffffff;
+}
+.contact-flex_contact_para {
+  color: #ffffff;
+}
+.arrow-dark,
+.arrow-light {
+  position: absolute;
+  right: 30px;
+  bottom: 36px;
+  cursor: pointer;
+  max-width: max-content;
+}
+.arrow-light {
+  position: absolute;
+  right: 30px;
+  transform: translateY(-40px);
+}
+.title-arrow-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  padding-top: 19px;
+  padding-bottom: 17px;
+}
+.footer-area{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+.footer-link {
+  font-family: "Switzer-Regular";
+  font-weight: 400;
+  color: var(--black-500);
+  font-size: 18px;
 }

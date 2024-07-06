@@ -19,18 +19,18 @@
     />
   </head>
   <body>
-    <div class="">
+    <div>
       <!-- header section starts -->
-      <header class="header">
+      <header class="header" id="home">
         <div class="main-container">
           <div class="nav-header">
             <div class="navbar">
               <ul class="nav-list nav-list-one">
                 <li class="nav-item">
-                  <a href="" class="nav-link">Home</a>
+                  <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">About</a>
+                  <a href="#about" class="nav-link">About</a>
                 </li>
               </ul>
               <div>
@@ -69,6 +69,7 @@
         </div>
       </header>
       <!-- header section ends -->
+      <!-- main section starts -->
       <main class="main">
         <!-- top info section -->
         <div class="info-section-wrapper">
@@ -115,7 +116,7 @@
           </div>
         </div>
         <!-- about us -->
-        <div class="about-us main-container">
+        <div class="about-us main-container" id="about">
           <div>
             <img src="images/aboutus.png" alt="" />
           </div>
@@ -149,6 +150,7 @@
         </div>
         <!-- our unique secton -->
         <!-- our unique sectone ends -->
+
         <!-- signup section starts -->
         <div class="signup-section">
           <div class="signup-section_area">
@@ -173,27 +175,94 @@
           </div>
         </div>
         <!-- sign up section ends -->
+
         <!-- experinece  magic starts -->
         <!-- experinece  magic emds -->
+
         <!-- reserve section starts -->
         <div class="reserve-section-area">
           <div class="reserve-container">
             <div class="reserve-section-flex">
-                <div class="reserve-section-left-col">
-                    <h3 class="reserve-section-title">it's time to get to know each other!</h3>
-                    <p class="reserve-section-para">Grab a cup of coffee and...</p>
-                    <div class="action-btn">
-                        Let’s talk!
-                    </div>
-                </div>
-                <div class="reserve-section-right-col">
-                    <img src="images/icon.png" alt="">
-                </div>
+              <div class="reserve-section-left-col">
+                <h3 class="reserve-section-title">
+                  it's time to get to know each other!
+                </h3>
+                <p class="reserve-section-para">Grab a cup of coffee and...</p>
+                <div class="action-btn">Let’s talk!</div>
+              </div>
+              <div class="reserve-section-right-col">
+                <img src="images/icon.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
+
         <!-- reserve section ends -->
+        <!-- contact section -->
+
+        <div class="contact-section-area" id="contact">
+          <div class="main-container">
+            <div class="contact-flex-box">
+              <!-- about div -->
+              <div class="contact-flex_about">
+                <div>
+                  <h4 class="contact-flex_about_title">About</h4>
+                  <p class="contact-flex_about_para">Us in a true way</p>
+                </div>
+                <div class="arrow-dark">
+                  <img src="images/arrowdark.png" alt="" />
+                </div>
+              </div>
+              <!-- rooms div -->
+              <div class="contact-flex_rooms">
+                <div>
+                  <p class="contact-flex_rooms_para">See our </p>
+                  <h4 class="contact-flex_rooms_title">Rooms</h4>
+                </div>
+                <div class="arrow-light">
+                  <img src="images/arrowlight.png" alt="" />
+                </div>
+              </div>
+              <!-- contact div -->
+              <div class="contact-flex_contact">
+                <div>
+                  <p class="contact-flex_contact_para">You can</p>
+                  <h4 class="contact-flex_contact_title">Contact</h4>
+                </div>
+               <div class="arrow-light">
+                  <img src="images/arrowlight.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- contact section ends -->
       </main>
+      <!-- main ends -->
+       <footer class="footer">
+        <div class="main-container footer-area">
+            <div class="footer-flex">
+                <a href="" class="footer-link">
+                    Made by: Azwedo
+                </a>
+                <a href="" class="footer-link">
+                    Powered by: Webflow
+                </a>
+                <a href="" class="footer-link">
+                    Change Log
+                </a>
+                <a href="" class="footer-link">
+                    Style Guide
+                </a>
+                <a href="" class="footer-link">
+                    Licensing
+                </a>
+                <a href="" class="footer-link">
+                    Instructions                
+                </a>
+            </div>
+        </div>
+       </footer>
     </div>
     <script src="scripts/index.js"></script>
   </body>
