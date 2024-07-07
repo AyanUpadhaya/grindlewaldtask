@@ -21,3 +21,17 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+
+// navigation
+
+window.addEventListener('scroll',()=>{
+  var navbar = document.querySelector(".nav-header");
+  var navbarHeight = navbar.offsetHeight;
+
+  if (window.scrollY > navbarHeight) {
+    navbar.classList.add("navbar-scrolled");
+  } else {
+    navbar.classList.remove("navbar-scrolled");
+  }
+});

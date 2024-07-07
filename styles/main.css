@@ -78,7 +78,7 @@ html {
 .px-4 {
   padding-inline: 16px;
 }
-
+/* header starts*/
 .header {
   max-height: 1080px;
   overflow: hidden;
@@ -86,13 +86,19 @@ html {
   background-size: cover;
 }
 .nav-header {
-  position: absolute;
-  top: 29px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   z-index: 1000;
+  padding-top: 29px;
+}
+
+.navbar-scrolled {
+  background-color: var(--primary-bg); /* New color when scrolled */
+  padding-bottom: 29px;
 }
 .navbar {
   width: 100%;
@@ -182,6 +188,10 @@ html {
   font-size: 18px;
   font-weight: 400;
 }
+
+/* header ends */
+
+/* main info starts */
 .main .info-section-wrapper {
   max-width: 100%;
   background-color: #fff;
@@ -239,6 +249,8 @@ html {
   color: var(--black-500);
   font-weight: 400;
 }
+/* main info ends */
+
 /* about us starts */
 .about-us-section {
   max-width: 100%;
@@ -679,6 +691,8 @@ html {
   color: var(--black-500);
   font-size: 18px;
 }
+
+/* swiper js */
 
 .swiper {
   width: 100%;
